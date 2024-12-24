@@ -15,7 +15,7 @@ main()
     FILE *f1,*f2,*f3;
     char c,str[10],st1[10];
     int num[100],lineno=0,tokenvalue=0,i=0,j=0,k=0;
-    printf("\nEnter the c program");/*gets(st1);*/
+    printf("\nEnter the c program");
     f1=fopen("input","w");
     while((c=getchar())!=EOF)
         putc(c,f1);
