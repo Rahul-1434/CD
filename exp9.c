@@ -162,21 +162,24 @@ void isproduct(char x, char p) {
 }
 
 int ister(char x) {
-    for (int i = 0; i < 6; i++)
+    int i;
+    for (i = 0; i < 6; i++)
         if (x == ter[i])
             return i + 1;
     return 0;
 }
 
 int isnter(char x) {
-    for (int i = 0; i < 3; i++)
+    int i;
+    for (i= 0; i < 3; i++)
         if (x == nter[i])
             return i + 1;
     return 0;
 }
 
 int isstate(char p) {
-    for (int i = 0; i < 12; i++)
+    int i;
+    for (i = 0; i < 12; i++)
         if (p == states[i])
             return i + 1;
     return 0;
@@ -206,11 +209,12 @@ char pop(char *s, int *sp) {
 }
 
 void printt(char *t, int *p, char inp[], int i) {
+    int r;
     printf("\n");
-    for (int r = 0; r <= *p; r++)
+    for (r = 0; r <= *p; r++)
         rep(t, r);
     printf("\t\t\t");
-    for (int r = i; inp[r] != '\0'; r++)
+    for (r = i; inp[r] != '\0'; r++)
         printf("%c", inp[r]);
 }
 
